@@ -1,18 +1,41 @@
+<!--
+Generated file.
+
+I then:
+ - stripped unnecessary content
+ - added Description
+ - added TODOs
+-->
+
 # multistep-form
 
-This template should help get you started developing with Vue 3 in Vite.
+A multistep form demo; using Vue + Pinia + TypeScript + Tailwind + shadcn.
 
-## Recommended IDE Setup
+## TODOs
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- [x] Use Pinia
+- [x] Use Tailwind
+- [x] Use shadcn
+- [ ] 3 step form
+- [ ] Form steps save to store
+- [ ] Form steps re-populate
+- [ ] Form step 1 resets form when using main navigation
+- [ ] Form validation
+- Mobile First
+- [ ] Phone portrait
+- [ ] Phone landscape
+- [ ] Tablet portrait
+- [ ] Tablet landscape
+- [ ] Desktop narrow
+- [ ] Desktop wide
+- Fix ugly styles
+  - [ ] Site margin
+  - [ ] Nav button margin
+- [ ] Use Dark Mode only
+- [ ] Use Argus colors
+- [ ] Movie List
+- [ ] Persist entires in localStorage
+- [ ] Update Favicon
 
 ## Project Setup
 
