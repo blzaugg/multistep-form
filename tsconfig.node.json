@@ -1,12 +1,14 @@
 {
+  "comment": "Generated file.",
   "extends": "@tsconfig/node20/tsconfig.json",
   "include": [
     "vite.config.*",
     "vitest.config.*",
     "cypress.config.*",
     "nightwatch.conf.*",
-    "playwright.config.*"
-, "../vite.config.ts"  ],
+    "playwright.config.*",
+    "../vite.config.ts"
+  ],
   "compilerOptions": {
     "composite": true,
     "noEmit": true,

@@ -1,3 +1,11 @@
+/*
+ * Generated file.
+ * 
+ * I then:
+ *  - Updated content paths
+ *  - Added plugins
+ */
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",

@@ -1,3 +1,10 @@
+/*
+ * Generated file.
+ * 
+ * I then:
+ *  - Added tailwind & autoprefixer
+ */
+
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
