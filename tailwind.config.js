@@ -1,16 +1,14 @@
-const animate = require("tailwindcss-animate")
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  darkMode: "class",
   safelist: ["dark"],
   prefix: "",
   
   content: [
-    './pages/**/*.{ts,tsx,vue}',
-    './components/**/*.{ts,tsx,vue}',
-    './app/**/*.{ts,tsx,vue}',
-    './src/**/*.{ts,tsx,vue}',
+    './src/components/**/*.{ts,vue}',
+    './src/views/**/*.{ts,vue}',
+    './src/*.{ts,vue}',
+    './index.html',
 	],
   
   theme: {
@@ -89,5 +87,9 @@ module.exports = {
       },
     },
   },
-  plugins: [animate],
+  plugins: [
+    require("tailwindcss-animate"),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ],
 }
