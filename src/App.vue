@@ -1,15 +1,26 @@
 <script setup lang="ts">
+/*
+ * Generated file.
+ * 
+ * I then:
+ *  - Updated nav
+ */
+
 import { RouterLink, RouterView } from 'vue-router'
+
+import { Button } from '@/components/shadcn/button'
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
-      <nav>
+    <nav>
+      <Button as-child>
         <RouterLink to="/">Movies List</RouterLink>
-        <RouterLink to="/add-new-movie-1">Add New Movie</RouterLink>
-      </nav>
-    </div>
+      </Button>
+      <Button as-child>
+        <RouterLink to="/add-new-movie-1">Add A New Movie</RouterLink>
+      </Button>
+    </nav>
   </header>
 
   <RouterView />
