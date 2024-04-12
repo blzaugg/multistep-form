@@ -1,15 +1,9 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script setup lang="ts">
+// Nothing yet
+</script>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<template>
+  <main>
+    <h1>Add New Movie 1</h1>
+  </main>
+</template>
