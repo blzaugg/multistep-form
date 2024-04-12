@@ -11,8 +11,8 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Movies List</RouterLink>
+        <RouterLink to="/add-new-movie-1">Add New Movie</RouterLink>
       </nav>
     </div>
   </header>
