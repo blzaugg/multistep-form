@@ -18,7 +18,7 @@ import { Button } from '@/components/shadcn/button'
         <RouterLink to="/">Movies List</RouterLink>
       </Button>
       <Button as-child>
-        <RouterLink to="/add-new-movie-1">Add A New Movie</RouterLink>
+        <RouterLink to="/add-new-movie/1">Add A New Movie</RouterLink>
       </Button>
     </nav>
   </header>

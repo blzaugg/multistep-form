@@ -20,17 +20,17 @@ const router = createRouter({
       component: MoviesListView
     },
     {
-      path: '/add-new-movie-1',
+      path: '/add-new-movie/1',
       name: 'add-new-movie-1',
       component: AddNewMovie1View
     },
     {
-      path: '/add-new-movie-2',
+      path: '/add-new-movie/2',
       name: 'add-new-movie-2',
       component: AddNewMovie2View
     },
     {
-      path: '/add-new-movie-3',
+      path: '/add-new-movie/3',
       name: 'add-new-movie-3',
       component: AddNewMovie3View
     }
