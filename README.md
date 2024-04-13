@@ -28,9 +28,10 @@ A multistep form demo; using Vue + Pinia + TypeScript + Tailwind + shadcn.
 - [ ] Tablet landscape
 - [ ] Desktop narrow
 - [ ] Desktop wide
-- Fix ugly styles
+- Add/Fix styles
   - [ ] Site margin
   - [ ] Nav button margin
+  - [ ] Page header/heading
 - [ ] Use Dark Mode only
 - [ ] Use Argus colors
 - [ ] Movie List
