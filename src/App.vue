@@ -12,7 +12,7 @@ import { Button } from '@/components/shadcn/button'
 </script>
 
 <template>
-  <header>
+  <header class="mb-3">
     <nav>
       <Button as-child>
         <RouterLink to="/">Movies List</RouterLink>
