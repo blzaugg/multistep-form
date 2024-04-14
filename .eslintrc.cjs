@@ -32,6 +32,13 @@ module.exports = {
         node: true
       }
     },
+    /* shadcn (3rd-party) exceptions. */
+    {
+      files: ['src/components/shadcn/**/*.{vue, js}'],
+      rules: {
+        'vue/multi-word-component-names': 'off'
+      }
+    }
   ],
   }
 }
