@@ -20,5 +20,15 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  overrides: [
+    /* JS files at root are Node files. */
+    {
+      files: ['*.{js,cjs}'],
+      env: {
+        node: true
+      }
+    },
+  ],
   }
 }
