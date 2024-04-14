@@ -17,6 +17,7 @@ import { Button } from '@/components/shadcn/button'
       <Button as-child>
         <RouterLink to="/">Movies List</RouterLink>
       </Button>
+      <!-- TODO: Hide button when in form flow -->
       <Button as-child>
         <RouterLink to="/add-new-movie/1">Add A New Movie</RouterLink>
       </Button>
