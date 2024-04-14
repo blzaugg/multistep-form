@@ -1,7 +1,7 @@
 <script setup lang="ts">
 /*
  * Generated file.
- * 
+ *
  * I then:
  *  - Updated nav
  */
