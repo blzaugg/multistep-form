@@ -12,9 +12,11 @@ require('@rushstack/eslint-patch/modern-module-resolution')
 module.exports = {
   root: true,
   extends: [
+    /* Config order is VERY important. General first, then more specific. */
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     '@vue/eslint-config-typescript/recommended',
+    /* Prettier configs should go last. */
     'plugin:prettier/recommended',
     '@vue/eslint-config-prettier'
   ],
