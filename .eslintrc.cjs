@@ -14,6 +14,7 @@ module.exports = {
   extends: [
     /* Config order is VERY important. General first, then more specific. */
     'eslint:recommended',
+    'plugin:@typescript-eslint/strict',
     'plugin:vue/vue3-recommended',
     '@vue/eslint-config-typescript/recommended',
     /* Prettier configs should go last. */
