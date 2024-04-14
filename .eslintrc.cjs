@@ -40,5 +40,19 @@ module.exports = {
       }
     }
   ],
+  rules: {
+    /*
+     * Allow using _myUnusedFunctionArgument type variables.
+     * function myFunction(_totallyNotUsed, butThisOneIs) { ... }
+     */
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_'
+      }
+    ],
   }
 }
