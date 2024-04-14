@@ -4,7 +4,8 @@ import { Primitive, type PrimitiveProps } from 'radix-vue'
 import { cn } from '@/lib/utils'
 
 const props = withDefaults(defineProps<PrimitiveProps & { class?: HTMLAttributes['class'] }>(), {
-  as: 'a'
+  as: 'a',
+  class: ''
 })
 </script>
 
