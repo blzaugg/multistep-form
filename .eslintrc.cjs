@@ -54,5 +54,7 @@ module.exports = {
         caughtErrorsIgnorePattern: '^_'
       }
     ],
+    /* Prefer interface over type syntax. */
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface']
   }
 }
