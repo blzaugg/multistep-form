@@ -4,6 +4,7 @@
  * I then:
  *  - Fixed extends order.
  *  - Added recommended configs
+ *  - Added custom overrides
  */
 
 /* eslint-env node */
@@ -37,6 +38,16 @@ module.exports = {
       files: ['src/components/shadcn/**/*.{vue, js}'],
       rules: {
         'vue/multi-word-component-names': 'off'
+      }
+    },
+    /* Vue */
+    {
+      files: ['src/**/*.vue'],
+      rules: {
+        // Makes searching code easier when the definition and usage match case.
+        'vue/attribute-hyphenation': ['error', 'never'],
+        // Makes searching code easier when the definition and usage match case.
+        'vue/v-on-event-hyphenation': ['error', 'never', { autofix: true }]
       }
     }
   ],
