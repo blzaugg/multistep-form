@@ -1,3 +1,5 @@
+<!-- Generated file. -->
+
 <script lang="ts" setup>
 import type { HTMLAttributes } from 'vue'
 import { useFormField } from './useFormField'

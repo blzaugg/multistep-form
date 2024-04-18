@@ -1,3 +1,5 @@
+<!-- Generated file. -->
+
 <script lang="ts">
 import type { HTMLAttributes, InjectionKey } from 'vue'
 

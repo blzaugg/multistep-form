@@ -1,3 +1,5 @@
+<!-- Generated file. -->
+
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { useVModel } from '@vueuse/core'

@@ -1,3 +1,5 @@
+<!-- Generated file. -->
+
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { Primitive, type PrimitiveProps } from 'radix-vue'

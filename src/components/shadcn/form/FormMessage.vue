@@ -1,3 +1,5 @@
+<!-- Generated file. -->
+
 <script lang="ts" setup>
 import { ErrorMessage } from 'vee-validate'
 import { toValue } from 'vue'
