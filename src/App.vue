@@ -14,11 +14,11 @@ import { Button } from '@/components/shadcn/button'
 <template>
   <header class="mb-3">
     <nav>
-      <Button as-child>
+      <Button asChild>
         <RouterLink to="/">Movies List</RouterLink>
       </Button>
       <!-- TODO: Hide button when in form flow -->
-      <Button as-child>
+      <Button asChild>
         <RouterLink to="/add-new-movie/1">Add A New Movie</RouterLink>
       </Button>
     </nav>
