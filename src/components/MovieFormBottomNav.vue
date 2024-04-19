@@ -63,14 +63,14 @@ defineEmits(['clickPrevious', 'clickNext'])
       variant="secondary"
       @click="$emit('clickPrevious')"
     >
-      <ChevronLeftIcon class="h-5 w-5" />
+      <ChevronLeftIcon class="h-5 w-5 -ml-1" />
     </Button>
 
     <Button class="ml-auto" :disabled="!nextEnabled" type="button" @click="$emit('clickNext')">
       {{ nextLabel }}
 
       <!-- TODO: Busy icon -->
-      <ChevronRightIcon v-if="!nextChevronHide" class="h-5 w-5" />
+      <ChevronRightIcon v-if="!nextChevronHide" class="h-5 w-5 -mr-1" />
     </Button>
   </div>
 </template>
