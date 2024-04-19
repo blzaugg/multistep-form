@@ -22,10 +22,14 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px'
-      }
+      padding: '2rem'
+    },
+    screens: {
+      sm: '431px',
+      md: '601px',
+      lg: '801px',
+      xl: '1025px',
+      '2xl': '1441px'
     },
     extend: {
       colors: {
