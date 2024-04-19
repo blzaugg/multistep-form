@@ -17,26 +17,26 @@ A multistep form demo; using Vue + Pinia + TypeScript + Tailwind + shadcn.
 - [x] Use Tailwind
 - [x] Use shadcn
 - [ ] 3 step form
-- [ ] Form steps save to store
-- [ ] Form steps re-populate
-- [ ] Form step 1 resets form when using main navigation
-- [ ] Form validation
+- [x] Form steps save to store
+- [x] Form steps re-populate
+- [x] Form step 1 resets form when using main navigation
+- [x] Form validation
 - Mobile First
-- [ ] Phone portrait
-- [ ] Phone landscape
-- [ ] Tablet portrait
-- [ ] Tablet landscape
-- [ ] Desktop narrow
-- [ ] Desktop wide
+  - [x] Phone portrait
+  - [x] Phone landscape
+  - [x] Tablet portrait
+  - [x] Tablet landscape
+  - [x] Desktop narrow
+  - [x] Desktop wide
 - Add/Fix styles
-  - [ ] Site margin
+  - [x] Site margin
   - [ ] Nav button margin
   - [ ] Page header/heading
-- [ ] Use Dark Mode only
-- [ ] Use Argus colors
+- [x] Use Dark Mode only
+- [x] Use Argus colors
 - [ ] Movie List
-- [ ] Persist entires in localStorage
-- [ ] Update Favicon
+- [x] Persist entires in localStorage
+- [x] Update Favicon
 
 ## Project Setup
 
