@@ -54,6 +54,12 @@
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
     --ring: 263.4 70% 50.4%;
+
+    /* Transparent input backgrouns on dark UIs are difficult to distinguish. */
+    input,
+    textarea {
+      @apply bg-secondary/25;
+    }
   }
 }
 
