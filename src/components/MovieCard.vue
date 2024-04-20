@@ -1,14 +1,45 @@
 <!-- Custom file. -->
 
+<!--
+  Usage example:
+
+  <MovieCard
+    coverArtDataUrl="data:image/png;base64,ABCxyz123..."
+    plotSummary="A short plot summary of the movie."
+    ratingMpa="PG-13"
+    releaseYear="1995"
+    title="My Movie Title"
+  />
+-->
+
 <script setup lang="ts">
 import { ImageIcon } from '@radix-icons/vue'
 import AspectRatio from '@/components/shadcn/aspect-ratio/AspectRatio.vue'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/shadcn/card'
 import { Skeleton } from '@/components/shadcn/skeleton'
 
+import { RatingMpa } from '@/models/Movie'
+
+import MpaRatingNR from '@/assets/svgs/mpa_rating_nr.svg'
+import MpaRatingG from '@/assets/svgs/mpa_rating_g.svg'
+import MpaRatingPG from '@/assets/svgs/mpa_rating_pg.svg'
+import MpaRatingPG13 from '@/assets/svgs/mpa_rating_pg-13.svg'
+import MpaRatingR from '@/assets/svgs/mpa_rating_r.svg'
+import MpaRatingNC17 from '@/assets/svgs/mpa_rating_nc-17.svg'
+
+const mpaRatingComponentMap = {
+  [RatingMpa.NR]: MpaRatingNR,
+  [RatingMpa.G]: MpaRatingG,
+  [RatingMpa.PG]: MpaRatingPG,
+  [RatingMpa['PG-13']]: MpaRatingPG13,
+  [RatingMpa.R]: MpaRatingR,
+  [RatingMpa['NC-17']]: MpaRatingNC17
+}
+
 defineProps<{
   coverArtDataUrl: string
   plotSummary: string
+  ratingMpa: RatingMpa | ''
   releaseYear: string
   title: string
 }>()
@@ -65,6 +96,17 @@ defineProps<{
           <Skeleton class="w-5/6 h-4 rounded-lg bg-muted" />
           <Skeleton class="w-2/3 h-4 rounded-lg bg-muted" />
         </div>
+
+        <!-- Rating -->
+        <p>
+          <component
+            :is="mpaRatingComponentMap[ratingMpa]"
+            v-if="ratingMpa != ''"
+            class="mr-auto h-12 border-2 border-white"
+          />
+
+          <Skeleton v-else class="h-12 w-20 rounded-xl bg-muted" />
+        </p>
       </CardContent>
     </div>
   </Card>
