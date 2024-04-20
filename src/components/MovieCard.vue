@@ -78,11 +78,19 @@ defineProps<{
 
     <!-- Movie Details -->
     <div class="flex flex-col sm:w-2/3">
-      <!-- Movie Title -->
       <CardHeader>
-        <CardTitle class="prose-xlz text-2xl">
-          {{ title }}
-          ({{ releaseYear }})
+        <CardTitle class="prose-xlz flex gap-x-2 text-2xl">
+          <!-- Title -->
+          <template v-if="title != ''">
+            {{ title }}
+          </template>
+
+          <Skeleton v-else class="mt-1 inline h-7 w-4/6 rounded-lg bg-muted" />
+
+          <!-- Year -->
+          <template v-if="releaseYear != ''"> ({{ releaseYear }}) </template>
+
+          <Skeleton v-else class="mt-1 inline h-7 w-1/6 rounded-lg bg-muted" />
         </CardTitle>
       </CardHeader>
 
