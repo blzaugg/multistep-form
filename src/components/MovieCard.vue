@@ -57,15 +57,15 @@ defineProps<{
     <div class="sm:w-1/3">
       <AspectRatio
         :class="[
-          'flex justify-center items-center m-6 mb-0', // base layout
+          'm-6 mb-0 flex items-center justify-center', // base layout
           'sm:mb-6 sm:mr-0', // sm layout
-          'bg-black border-2 border-muted-foreground' // color
+          'border-2 border-muted-foreground bg-black' // color
         ]"
         :ratio="3 / 4"
       >
         <img
           v-if="coverArtDataUrl != ''"
-          class="object-cover w-full h-full"
+          class="h-full w-full object-cover"
           :src="coverArtDataUrl"
           :alt="`Cover Art for ${title}`"
         />
@@ -90,11 +90,11 @@ defineProps<{
       <CardContent>
         {{ plotSummary }}
 
-        <div v-if="plotSummary == ''" class="space-y-3">
-          <Skeleton class="w-5/6 h-4 rounded-lg bg-muted" />
-          <Skeleton class="w-full h-4 rounded-lg bg-muted" />
-          <Skeleton class="w-5/6 h-4 rounded-lg bg-muted" />
-          <Skeleton class="w-2/3 h-4 rounded-lg bg-muted" />
+        <div v-if="plotSummary == ''" class="space-y-3 pb-1 pt-2">
+          <Skeleton class="h-4 w-5/6 rounded-lg bg-muted" />
+          <Skeleton class="h-4 w-full rounded-lg bg-muted" />
+          <Skeleton class="h-4 w-5/6 rounded-lg bg-muted" />
+          <Skeleton class="h-4 w-2/3 rounded-lg bg-muted" />
         </div>
 
         <!-- Rating -->
