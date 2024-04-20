@@ -1,9 +1,15 @@
+<!-- Custom file. -->
+
 <script setup lang="ts">
-// Nothing yet
+import PageHeading from '@/components/PageHeading.vue'
 </script>
 
 <template>
   <main>
-    <h1>Movie List</h1>
+    <PageHeading headingText="Movie List" />
+
+    <!-- TODO: Toast on Add Movie success -->
+    <!-- TODO: Simple Data Table of Movies -->
+    <!-- TODO: Fancy List of Movies -->
   </main>
 </template>
