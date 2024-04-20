@@ -1,7 +1,17 @@
-import { type ArgusRating } from './ArgusRating'
+/* Custom file. */
+
+export enum RatingMpa {
+  'NR' = 'NR',
+  'G' = 'G',
+  'PG' = 'PG',
+  'PG-13' = 'PG-13',
+  'R' = 'R',
+  'NC-17' = 'NC-17'
+}
 
 export interface Movie {
-  argusRating: ArgusRating
+  ratingMpa: RatingMpa
+  // TODO: ratingArgus: RatingArgus
   /**
    * Cover Art in the form of a data URL
    *
@@ -25,14 +35,14 @@ export interface Movie {
  * Used after record is created.
  */
 export function MovieFactory(
-  argusRating: Movie['argusRating'],
+  ratingMpa: Movie['ratingMpa'],
   coverArtDataUrl: Movie['coverArtDataUrl'],
   plotSummary: Movie['plotSummary'],
   releaseYear: Movie['releaseYear'],
   title: Movie['title']
 ): Movie {
   return {
-    argusRating,
+    ratingMpa,
     coverArtDataUrl,
     plotSummary,
     releaseYear,
@@ -50,14 +60,14 @@ export type MovieOptional = {
 }
 
 export function MovieOptionalFactory(
-  argusRating?: Movie['argusRating'],
+  ratingMpa?: Movie['ratingMpa'],
   coverArtDataUrl?: Movie['coverArtDataUrl'],
   plotSummary?: Movie['plotSummary'],
   releaseYear?: Movie['releaseYear'],
   title?: Movie['title']
 ): MovieOptional {
   return {
-    argusRating,
+    ratingMpa,
     coverArtDataUrl,
     plotSummary,
     releaseYear,
