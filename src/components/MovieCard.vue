@@ -2,7 +2,7 @@
 
 <script setup lang="ts">
 import { ImageIcon } from '@radix-icons/vue'
-import AspectRatio from '@/components/aspect-ratio/AspectRatio.vue'
+import AspectRatio from '@/components/shadcn/aspect-ratio/AspectRatio.vue'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/shadcn/card'
 import { Skeleton } from '@/components/shadcn/skeleton'
 
