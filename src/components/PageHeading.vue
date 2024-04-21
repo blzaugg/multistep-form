@@ -13,8 +13,7 @@ defineProps<{
 </script>
 
 <template>
-  <header class="my-2">
-    <!-- TODO: Customize page heading -->
+  <header class="my-6">
     <div class="prose dark:prose-invert">
       <h1 class="text-2xl">{{ headingText }}</h1>
     </div>
