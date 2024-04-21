@@ -61,7 +61,7 @@ defineProps<{
           'sm:mb-6 sm:mr-0', // sm layout
           'border-2 border-muted-foreground bg-black' // color
         ]"
-        :ratio="3 / 4"
+        :ratio="2 / 3"
       >
         <img
           v-if="coverArtDataUrl != ''"
