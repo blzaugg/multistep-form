@@ -54,7 +54,7 @@ defineProps<{
     ]"
   >
     <!-- Cover Art -->
-    <div class="sm:w-1/3">
+    <div class="mx-auto w-5/6 sm:w-1/3">
       <AspectRatio
         :class="[
           'm-6 mb-0 flex items-center justify-center', // base layout
