@@ -19,6 +19,8 @@
     "@vueuse/core": "^10.9.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "embla-carousel": "^8.0.2",
+    "embla-carousel-vue": "^8.0.2",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
     "radix-vue": "^1.7.0",
