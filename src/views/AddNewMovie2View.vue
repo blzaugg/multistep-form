@@ -113,7 +113,7 @@ function onClickPrevious() {
     <!-- TODO: Abstract to MovieForm -->
     <Form
       v-slot="{ validate, meta }"
-      class="my-6 space-y-6"
+      class="mt-6 space-y-6"
       :validationSchema="typedSchema"
       :initialValues="{
         coverArtDataUrl: movieFormStore.inputs.coverArtDataUrl ?? '',

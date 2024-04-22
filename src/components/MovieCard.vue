@@ -95,7 +95,7 @@ defineProps<{
       </CardHeader>
 
       <!-- Plot Summary -->
-      <CardContent class="prose dark:prose-invert">
+      <CardContent class="prose prose-invert">
         <p v-if="plotSummary != ''">{{ plotSummary }}</p>
 
         <div v-else class="space-y-3 pb-1 pt-2">

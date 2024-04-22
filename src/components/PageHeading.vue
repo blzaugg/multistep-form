@@ -14,7 +14,7 @@ defineProps<{
 
 <template>
   <header class="my-6">
-    <div class="prose dark:prose-invert">
+    <div class="prose prose-invert">
       <h1 class="text-2xl">{{ headingText }}</h1>
     </div>
   </header>

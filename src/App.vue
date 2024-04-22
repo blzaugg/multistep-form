@@ -17,8 +17,8 @@ const underAddNewMovieFlow = computed(() => route.path.startsWith('/add-new-movi
 </script>
 
 <template>
+  <!-- TODO: Abstract to SiteHeader -->
   <header class="mb-3">
-    <!-- TODO: Rework navigation -->
     <nav>
       <Button v-if="underAddNewMovieFlow" asChild>
         <RouterLink class="flex gap-x-1" to="/">
@@ -42,6 +42,24 @@ const underAddNewMovieFlow = computed(() => route.path.startsWith('/add-new-movi
   </header>
 
   <RouterView />
+
+  <!-- TODO: Abstract to SiteFooter -->
+  <footer
+    class="my-3 flex h-5 w-full items-center justify-center space-x-4 text-sm text-muted-foreground"
+  >
+    <div>© Byran Zaugg</div>
+
+    <div>
+      <Button
+        as="a"
+        variant="link"
+        class="text-muted-foreground underline hover:no-underline"
+        href="https://github.com/blzaugg/multistep-form/"
+      >
+        Project source @ GitHub
+      </Button>
+    </div>
+  </footer>
 
   <Toaster />
 </template>
