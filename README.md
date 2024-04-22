@@ -16,7 +16,7 @@ A multistep form demo; using Vue + Pinia + TypeScript + Tailwind + shadcn.
 - [x] Use Pinia
 - [x] Use Tailwind
 - [x] Use shadcn
-- [ ] 3 step form
+- [x] 3 step form
 - [x] Form steps save to store
 - [x] Form steps re-populate
 - [x] Form step 1 resets form when using main navigation
@@ -30,11 +30,11 @@ A multistep form demo; using Vue + Pinia + TypeScript + Tailwind + shadcn.
   - [x] Desktop wide
 - Add/Fix styles
   - [x] Site margin
-  - [ ] Nav button margin
-  - [ ] Page header/heading
+  - [x] Nav button margin
+  - [x] Page header/heading
 - [x] Use Dark Mode only
 - [x] Use Argus colors
-- [ ] Movie List
+- [x] Movie List
 - [x] Persist entires in localStorage
 - [x] Update Favicon
 
