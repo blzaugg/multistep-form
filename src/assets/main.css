@@ -56,6 +56,12 @@
     --input: 215 27.9% 16.9%;
     --ring: 263.4 70% 50.4%;
 
+    /* Show that labels are interactive. */
+    label[for],
+    label:has(input, select, textarea) {
+      cursor: pointer;
+    }
+
     /* Transparent input backgrouns on dark UIs are difficult to distinguish. */
     input,
     textarea {
