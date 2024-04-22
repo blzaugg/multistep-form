@@ -62,9 +62,11 @@
       cursor: pointer;
     }
 
-    /* Transparent input backgrouns on dark UIs are difficult to distinguish. */
+    /* Transparent input backgrounds on dark UIs are difficult to distinguish. */
     input,
-    textarea {
+    textarea,
+    [role='combobox'],
+    [data-radix-select-viewport] {
       @apply bg-secondary/25;
     }
   }
