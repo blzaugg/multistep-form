@@ -13,6 +13,7 @@
   Middle step:
 
   <MovieFormBottomNav
+    previousEnabled
     previousShow
     :nextEnabled="formIsValid"
     @clickNext="onClickNext"
@@ -22,9 +23,10 @@
   Final/Save step:
 
   <MovieFormBottomNav
+    :previousEnabled="!savingMovie"
     previousShow
     nextChevronHide
-    :nextEnabled="formIsValid"
+    :nextEnabled="!savingMovie && formIsValid"
     nextLabel="Save"
     @clickNext="onClickSave"
     @clickPrevious="onClickPrevious"
@@ -38,8 +40,8 @@ import { Button } from '@/components/shadcn/button'
 
 withDefaults(
   defineProps<{
-    // TODO: Busy prop
     nextEnabled?: boolean
+    previousEnabled?: boolean
     nextLabel?: string
     nextChevronHide?: boolean
     previousLabel?: string
@@ -59,6 +61,7 @@ defineEmits(['clickPrevious', 'clickNext'])
     <Button
       v-if="previousShow"
       :aria-label="previousLabel"
+      :disabled="!previousEnabled"
       type="button"
       variant="secondary"
       @click="$emit('clickPrevious')"
