@@ -10,6 +10,7 @@ import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { PlusIcon, ListBulletIcon } from '@radix-icons/vue'
 
 import { Button } from '@/components/shadcn/button'
+import Toaster from '@/components/shadcn/toast/Toaster.vue'
 
 const route = useRoute()
 const underAddNewMovieFlow = computed(() => route.path.startsWith('/add-new-movie'))
@@ -41,4 +42,6 @@ const underAddNewMovieFlow = computed(() => route.path.startsWith('/add-new-movi
   </header>
 
   <RouterView />
+
+  <Toaster />
 </template>
