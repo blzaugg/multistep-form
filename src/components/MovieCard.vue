@@ -106,7 +106,7 @@ defineProps<{
         </div>
 
         <!-- Rating -->
-        <p>
+        <p :aria-label="`MPA Rating: ${ratingMpa}`">
           <component
             :is="mpaRatingComponentMap[ratingMpa]"
             v-if="ratingMpa != ''"
