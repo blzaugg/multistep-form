@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 import { ImageIcon } from '@radix-icons/vue'
-import AspectRatio from '@/components/shadcn/aspect-ratio/AspectRatio.vue'
+import { AspectRatio } from '@/components/shadcn/aspect-ratio'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/shadcn/card'
 import { Skeleton } from '@/components/shadcn/skeleton'
 
@@ -65,9 +65,9 @@ defineProps<{
       >
         <img
           v-if="coverArtDataUrl != ''"
+          :alt="`Cover Art for ${title}`"
           class="h-full w-full object-cover"
           :src="coverArtDataUrl"
-          :alt="`Cover Art for ${title}`"
         />
 
         <ImageIcon v-else class="h-20 w-20 text-muted-foreground" />
