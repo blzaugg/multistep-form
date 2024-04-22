@@ -11,7 +11,6 @@ export const useMovieFormStore = defineStore(
     /* STATE */
 
     /** Form input values */
-    // TODO: Maybe not nest movie props under inputs?
     const inputs = ref(MovieOptionalFactory())
 
     /* GETTERS */
