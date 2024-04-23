@@ -1,0 +1,84 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI Build and Deploy GitHub Pages
+
+# Workflow Triggers
+on:
+  # On push events to the "main" branch
+  push:
+    branches:
+      - main
+
+  # Manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+# Workflow
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Actions Checkout
+      - uses: actions/checkout@v4
+
+      # Actions Setup Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Run NPM Install
+        run: npm ci
+
+      - name: Run Vite Build
+        run: npm run build-only
+
+      # DEBUG
+      # - name: Debug files to upload
+      #   run: 'ls -R ./dist'
+
+      # Debug extracted files
+      # Upload dist folder as an archive (github-pages) for later deploy
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          # name: github-pages
+          path: './dist/'
+
+  deploy:
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    # Use the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # Download github-pages archive
+      # - uses: actions/download-artifact@v4
+      #   with:
+      #     name: github-pages
+      #     path: .
+
+      # DEBUG
+      # - name: Debug extracted files
+      #   run: ls -R
+
+      # Actions Configure GitHub Pages
+      - uses: actions/configure-pages@v4
+
+      # Actions Deploy from artifact to GitHub Pages
+      - id: deployment
+        uses: actions/deploy-pages@v4
