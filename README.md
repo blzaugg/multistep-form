@@ -10,6 +10,8 @@ I then:
 
 A multistep form demo; using Vue + Pinia + TypeScript + Tailwind + shadcn.
 
+See the live demo at: https://blzaugg.github.io/multistep-form/
+
 ## Project Setup
 
 ```sh
